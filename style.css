@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background-wrapper {
+    background-color: rgba(2, 2, 2, 0.758);
+    outline-style: solid;
+    outline-width: 8px;
+    outline-color: rgb(125, 129, 125);
+    /* padding: 10px 50px; */
+    /* width: 90%; */
+    /* opacity: 0.3; */
+    border-radius: 1px;
+    /* background: rgba(45, 18, 67, 0.79); */
+    height: 80vh;
+    position: relative;
+}
+.main-container {
+    background: url("./img/JS-img.jpg");
+    padding: 20px 40px;
+    height: 100vh;
+    /* z-index: 0; */
+}
+.container {
+    position: absolute;
+    top: 0;
+    margin: 20px 50px;
+    z-index: 1;
+}
+.nav-logo h5 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: rgb(81, 170, 81);
+    font-weight: small;
+    float: left;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-logo h3 {
+    font-size: 30px;
+    color: rgb(81, 170, 81);
+    font-weight: small;
+    float: left;
+    transition: font-size 2s;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h3:hover {
+    color: white;
+    font-size: large;
+}
+.nav-bar {
+    text-align: center;
+    padding: 10px 20px;
+    font-style: normal;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    z-index: 3;
+}
+.nav-link a {
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    padding-right: 40px;
+    color: rgb(81, 170, 81);
+    display: inline-block;
+}
+a:hover {
+    color: white;
+}
+.search-logo {
+    float: right;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.search-logo:hover {
+    color: rgb(81, 170, 81);
+}
+.content {
+    color: white;
+    display: grid;
+    word-spacing: 2px;
+    margin-left: 350px;
+    margin-top: 90px;
+    line-height: 2.5vh;
+    font-weight: 2px;
+    font-size: 13px;
+    z-index: 1;
+}
+.content h3 {
+    font-family: fantasy;
+    font-size: 60px;
+    /* font-weight: 70px; */
+    font-family: "hurme-geometric-sans-2", sans-serif;
+}
+.content p {
+    align-items: center;
+}
+i {
+    color: yellow;
+}
+.content-1 p {
+    padding-top: 20px;
+}
+.content-2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.fade-text {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 800px;
+
+    max-height: 160px; /* Height where fade starts */
+    overflow: scroll;
+    text-overflow: ellipsis;
+    position: relative;
+
+    /* Fade effect */
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 80%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-repeat: no-repeat;
+    mask-size: 50% 100%;
+}
+.fade-text::first-line {
+    color: rgb(81, 170, 81);
+}
+.left-side {
+    float: left;
+    background-color: rgba(8, 8, 8, 0.916);
+    height: 100%;
+    width: 45%;
+    margin: auto;
+
+    overflow: hidden;
+    position: relative;
+
+    /* Fade effect */
+    -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: linear-gradient(to right, black 90%, transparent 100%);
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+}
+.right-side {
+    background: url("./img/the\ witcher.jpg") no-repeat;
+    width: 55%;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    float: left;
+    margin: auto;
+    opacity: 1;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 200px;
+    padding-right: 100px;
+    color: rgba(255, 255, 255, 0.943);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Fade effect */
+    -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: linear-gradient(to left, black 90%, transparent 100%);
+    mask-repeat: no-repeat;
+}
+.nav-line {
+    width: 50%;
+    color: rgb(189, 224, 13);
+    height: 2vh;
+}
+
+.image-container {
+    position: relative;
+    margin-top: 50px;
+}
+.image-container .cad {
+    display: inline-block;
+    margin-left: 40px;
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+.image-container img {
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: rgb(125, 129, 125);
+    width: 100%;
+    height: 25vh;
+    transition: transform 0.3s ease;
+}
+.desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 13px;
+    padding-top: 10px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.image-container .cad:hover img {
+    transform: scale(1.11);
+}
+.image-container .cad:hover .desc {
+    color: rgb(81, 170, 81);
+}
+.form-input {
+    display: inline-block;
+    background-color: #3735352d;
+    padding: 39px;
+    font-family: "Times New Roman";
+    font-size: 14px;
+    width: 60%;
+    margin-left: auto;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    z-index: 100;
+}
+input[type="text"],
+select {
+    margin: 4px 0;
+    display: inline-block;
+    padding: 5px 30%;
+    width: 100%;
+    border: 1px solid #cccccc20;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #d1cfcf92;
+    transition: width 0.4s ease-in-out;
+}
+.form-input h3 {
+    display: flex;
+    justify-content: center;
+}
+input[type="submit"] {
+    width: 80%;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 3px;
+    margin: 8px 10%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #1d3f1f;
+}
+input[type="text"]:focus {
+    background-color: lightblue;
+    border: 3px solid #555;
+}
+@media screen and (max-width: 1280px) {
+    .nav-link a {
+        float: none;
+        display: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .background-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+    .left-side,
+    .right-side {
+        width: 100%;
+        float: none;
+        height: 200px;
+    }
+    .content {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
