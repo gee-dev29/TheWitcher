@@ -208,7 +208,7 @@ i {
 .image-container .cad:hover .desc {
     color: rgb(81, 170, 81);
 }
-.form-input {
+.form-input { 
     display: inline-block;
     background-color: #3735352d;
     padding: 39px;
