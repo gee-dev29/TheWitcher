@@ -217,7 +217,7 @@ i {
     width: 60%; 
     margin-left: auto;
     padding-bottom: 10px;
-    border-radius: 3px;
+    border-radius: 3px; 
     z-index: 100;
 }
 input[type="text"],
